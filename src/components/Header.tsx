@@ -5,15 +5,22 @@ import "./Header.css";
 export default function Header() {
   return (
     <header className="header">
-      <NavLink to="/" className="header-button">
-        Home
-      </NavLink>
-      <NavLink to="/about" className="header-button">
-        About
-      </NavLink>
-      <NavLink to="/contact" className="header-button">
-        Contact
-      </NavLink>
+      <h1 className="header-name">Gianluca</h1>
+      <div className="header-tab-container">
+        <NavLink to="/" className="header-button">
+          HOME
+        </NavLink>
+        <NavLink to="/" className="header-button">
+          ABOUT ME
+        </NavLink>
+        <NavLink to="/about" className="header-button">
+          WORKS
+        </NavLink>
+        <NavLink to="/contact" className="header-button">
+          CONTACT
+        </NavLink>
+      </div>
+      <div style={{ minWidth: "150px" }}></div>
     </header>
   );
 }
