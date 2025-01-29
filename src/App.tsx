@@ -6,8 +6,11 @@ import GithubIcon from "./components/icons/GithubIcon";
 import LinkedinIcon from "./components/icons/LinkedinIcon";
 
 import "./App.css";
+import { useNavigate } from "react-router";
 
 function App() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       <Folder>
@@ -74,7 +77,7 @@ function App() {
           <h1>Previous work</h1>
         </div>
         <div className="card-container">
-          <button className="card">
+          <button className="card" onClick={() => navigate("/works#goal-wall")}>
             <div
               style={{
                 height: "220px",
@@ -107,7 +110,7 @@ function App() {
                 gap: "1rem",
               }}
             >
-              <h2>GoalWall</h2>
+              <h2>Goal Wall</h2>
               <p>
                 This project lets people share their{" "}
                 <span style={{ fontWeight: "bold" }}>gym goals</span>, see other
@@ -140,7 +143,10 @@ function App() {
               </div>
             </div>
           </button>
-          <button className="card">
+          <button
+            className="card"
+            onClick={() => navigate("/works#research-project")}
+          >
             <div
               style={{
                 height: "220px",
@@ -173,7 +179,8 @@ function App() {
                   reality, affect women's perceived safety in urban
                   environments?
                 </span>{" "}
-                With the help of a VR headset and the{" "}
+                With the help of a{" "}
+                <span style={{ fontWeight: "bold" }}>VR headset</span> and the{" "}
                 <span style={{ fontWeight: "bold" }}>Unity engine</span>
               </p>
               <div

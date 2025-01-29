@@ -1,0 +1,31 @@
+.works-container {
+  padding: 2rem;
+}
+
+.work {
+  margin-bottom: 2rem;
+}
+
+.images-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+  .images-container {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.name-container {
+  margin: 0;
+  font-weight: bold;
+  border: 1px solid #5d9484;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
