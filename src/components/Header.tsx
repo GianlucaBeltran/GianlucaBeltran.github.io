@@ -20,7 +20,7 @@ export default function Header() {
           WORKS
         </NavLink>
       </div>
-      <div style={{ minWidth: "150px" }}></div>
+      <div className="header-name"></div>
     </header>
   );
 }

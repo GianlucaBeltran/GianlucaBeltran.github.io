@@ -31,6 +31,17 @@
   /* color: #646cff; */
 }
 
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 1em;
+  }
+
+  .header-name {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
 .active {
   font-weight: bold;
   width: 100px;
